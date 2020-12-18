@@ -1,4 +1,4 @@
-﻿/*==============================================================================
+/*==============================================================================
 Copyright (c) 2019 PTC Inc. All Rights Reserved.
 
 Copyright (c) 2010-2014 Qualcomm Connected Experiences, Inc.
@@ -104,7 +104,7 @@ public class EventHandler : MonoBehaviour, ITrackableEventHandler
 
             //Stop the Animator
             StartCoroutine(finishAnim(anim.GetCurrentAnimatorStateInfo(0).length));
-
+            
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
             var canvasComponents = mTrackableBehaviour.GetComponentsInChildren<Canvas>(true);
@@ -136,8 +136,6 @@ public class EventHandler : MonoBehaviour, ITrackableEventHandler
             //Disable the animator and sound
             anim.enabled = false;
             audio1.Stop();
-
-            
 
             var rendererComponents = mTrackableBehaviour.GetComponentsInChildren<Renderer>(true);
             var colliderComponents = mTrackableBehaviour.GetComponentsInChildren<Collider>(true);
